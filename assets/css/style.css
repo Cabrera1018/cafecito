@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.6rem;
+}
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4rem;
+}
+img{
+    max-width: 100%;
+}
+header{
+    background-image: url("../img/banner.jpg");
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header_texto{
+    text-align: center;
+    color: white;
+    margin-top: 5rem;
+}
+.barra{
+    padding-top: 4rem;
+}
+.logo{
+    color: white;
+}
+.navegacion_enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: white;
+}
+.entrada{
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 2rem;
+}
+.boton{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    border: none;
+    background-color: rgb(121, 65, 1);
+}
+.boton:hover{
+    cursor: pointer;
+}
+.cursos{
+    list-style: none;
+}
+.widget-curso{
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 2rem;
+}
+footer{
+    background-color: rgb(85, 45, 0);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+    color: white;
+}
+
+@media (min-width: 768px){
+    .header_texto{
+        margin-top: 15rem;
+    }
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+    .boton{
+        display: inline-block;
+    }
+}
